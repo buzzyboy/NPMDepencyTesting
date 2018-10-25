@@ -5,6 +5,9 @@ module.exports = {
     mode: 'development',
     entry: path.join(__dirname, './src/entry.js'),
     devtool: 'source-map',
+    optimization: {
+        usedExports: true
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js',
@@ -28,7 +31,10 @@ module.exports = {
                         presets: [
                             '@babel/preset-env'
                         ],
-                        plugins: []
+                        plugins: [
+                            '@babel/plugin-transform-runtime',
+                            '@babel/plugin-syntax-dynamic-import'
+                        ]
                     }
                 }
             },

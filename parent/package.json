@@ -6,8 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
+    "build:watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "link-children": "npm link cody-test-child-module && npm link cody-test-child-lazy-module"
+    "link-children": "npm link cody-test-child-module && npm link cody-test-child-lazy-module",
+    "production": "webpack --config ./webpack.production.js"
   },
   "author": "Cody Brooks <cbrooks@seismic.com>",
   "license": "ISC",
@@ -30,8 +32,8 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "cody-test-child-lazy-module": "^1.0.0",
-    "cody-test-child-module": "1.0.2",
+    "cody-test-child-lazy-module": "1.0.1",
+    "cody-test-child-module": "1.0.3",
     "lodash": "^4.17.11"
   }
 }
