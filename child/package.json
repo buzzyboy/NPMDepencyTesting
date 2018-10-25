@@ -10,5 +10,8 @@
     "src"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/runtime": "^7.1.2"
+  }
 }
