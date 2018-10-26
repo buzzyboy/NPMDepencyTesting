@@ -1,9 +1,12 @@
-import {ChildModuleOne} from "cody-test-child-module";
+import ReactDOM from 'react-dom';
+import * as React from 'react';
+import {ChildComponent} from "cody-test-child-module";
+import {ComponentOfParent} from "./ComponentOfParent";
 
 class AppInitializer {
     initialize() {
-        new ChildModuleOne();
-        console.log('App initialized');
+        const mainContainerEl = document.getElementById('mainContainer');
+        ReactDOM.render(<div><ComponentOfParent/><ChildComponent/></div>, mainContainerEl);
     }
 }
 
@@ -13,7 +16,4 @@ window.initializeApp = () => {
 };
 
 window.lazyLoadNextComponent = async () => {
-    const LazyModuleOne = await import('cody-test-child-lazy-module');
-    console.log('LazyLoadModuleOne', LazyModuleOne);
-    new LazyModuleOne.LazyModuleOne();
 };

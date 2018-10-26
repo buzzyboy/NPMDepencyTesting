@@ -1,6 +1,6 @@
 {
   "name": "cody-test-child-module",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "",
   "main": "./src/entry.js",
   "scripts": {
@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/runtime": "^7.1.2"
+  },
+  "dependencies": {
+    "react": "15.0.0"
   }
 }
