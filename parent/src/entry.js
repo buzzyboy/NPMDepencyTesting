@@ -6,7 +6,7 @@ import {ComponentOfParent} from "./ComponentOfParent";
 class AppInitializer {
     initialize() {
         const mainContainerEl = document.getElementById('mainContainer');
-        ReactDOM.render(<div><ComponentOfParent/><ChildComponent/></div>, mainContainerEl);
+        ReactDOM.render(<div><ComponentOfParent/></div>, mainContainerEl);
     }
 }
 

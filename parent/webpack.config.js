@@ -21,7 +21,7 @@ module.exports = {
                 exclude: function (content) {
                     const regex = /node_modules(?!(\\|\/|\\\\)cody-test)/;
                     const isMatch = regex.test(content);
-                    console.log(content, isMatch);
+                    // console.log(content, isMatch);
                     return isMatch;
                 },
                 use: {

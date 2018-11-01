@@ -1,4 +1,5 @@
 import * as React from "react";
+import {ChildComponent} from "cody-test-child-module";
 
 let LazyLoadedComponent = null;
 
@@ -22,6 +23,7 @@ export class ComponentOfParent extends React.Component {
         return (
             <div>
                 <span>This comes from the parent component</span>
+                <ChildComponent/>
                 <button onClick={this.onButtonClick}>Lazy Load Next Component</button>
                 {
                     this.state.isLazyLoadedComponentLoaded &&

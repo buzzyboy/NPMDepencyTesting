@@ -1,6 +1,6 @@
 {
   "name": "cody-test-child-module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "./src/entry.js",
   "scripts": {
