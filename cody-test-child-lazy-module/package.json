@@ -1,0 +1,20 @@
+{
+  "name": "cody-test-child-lazy-module",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./src/entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/runtime": "^7.1.2",
+    "react": "^16.6.0"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": "^16.6.0"
+  }
+}
